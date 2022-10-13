@@ -19,8 +19,3 @@ def number_of_line(directory):
         for line in file_path:
             count_line += 1
         print("{0} = {1}".format(file_path, count_line))
-
-# number_of_line('src_lang/frasbl_readaloud')
-# number_of_line('src_lang/wolKYG_readaloud')
-# all_text_in_one('src_lang/frasbl_readaloud')
-# all_text_in_one('src_lang/wolKYG_readaloud')

@@ -41,9 +41,9 @@ def generate_file(path, text):
     file.close()
 
 
-generate_file('../text_scrapped/coran/coran_wol.txt',
-              extract_pdf_text('../text_scrapped/coran/coran_wol.pdf', 'wol')
-              )
+# generate_file('../text_scrapped/coran/coran_wol.txt',
+#               extract_pdf_text('../text_scrapped/coran/coran_wol.pdf', 'wol')
+#               )
 
 generate_file('../text_scrapped/coran/coran_fr.txt',
               extract_pdf_text('../text_scrapped/coran/coran_fr.pdf', 'fr')

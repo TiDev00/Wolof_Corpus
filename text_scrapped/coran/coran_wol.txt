@@ -17912,7 +17912,7 @@ Ci turu Yàlla Yërëmaakoon bi, Jaglewaakoon bi.
  
 4. Yàlla mi leen joxu ñam ba xiifuñu aar leen it ba ragaluñu tiituñu!  
  
------------------------------------------------------------------------- ----- 
+------------------------------------------------------------------------------
  
  
 Saar 107 : NJËFANDUKAAY  
@@ -18064,4 +18064,4 @@ Ci turu Yàlla Yërëmaakoon bi, Jaglewaakoon bi.
 5. kiy jax -jaxal ci biir dënni nit ñi,  
  
 6. te bokk ci jinne yeek nit ñi”.   
--------------------------------------------------- ---------------------------  
+------------------------------------------------------------------------------
