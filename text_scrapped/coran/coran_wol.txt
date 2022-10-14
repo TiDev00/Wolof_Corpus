@@ -107,7 +107,7 @@ Yàlla digle ñu jokkale ko [ag mbokk]. Te ñiy yàq ci suuf si. Ñooña ñooy �
 dana leen dekkalaat ngeen dellu ca Moom. 
  
 29. Moom moo leen sàkkal lépp lu nekk ci suuf si, daldi jublu ci asamaan si def ko mu nekk 
-juróoom -ñaari asamaan . Te moom nag lépp la xam. 
+juróom -ñaari asamaan . Te moom nag lépp la xam.
  
 30. Fàttalikul ba sa Boroom waxee Malaaka ya, ne leen: "Man dey damaa namm a def ci suuf 
 si ag kilifa[kuutaay]. Ñu toontu ne ko : "Moo ndax dangay def ci suuf si koo xam ne dafa ciy 
@@ -1070,7 +1070,7 @@ Saar 3 : NJABOOTU HIMRAAN
 -------------------------------------------------------------- ---------------------------------------------------
 ----------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  1. Alif, Laam, Miim.. 
  
 2. Yàlla mooy Yàlla ! Amul jeneen yàlla ju dul Moom, Aji -dundu la, di Aji -taxawaakoon ci 
@@ -4763,7 +4763,7 @@ Saar 10 : YUNUS
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Alif, Laam, Raa. Lii ay laayay Téere bu ñu xereñe lañu. 
  2. Moo ndax dafa dul yéem ci nit ñi, Nu soloo (xamal) góor gu bokk ci ñoom : "Ndigalul waar 
@@ -5114,7 +5114,7 @@ Saar 11 : HUUD
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Alif, Laam, Raa. Lii ab Téere la bu ñu xereñe ay kàddoom, faramfàccees ko mu tukkee ca 
 Ku xereñ ka, di Ku deñ -kumpa [Yàlla]. 
@@ -6382,7 +6382,7 @@ Sama àddina sii luy nekk la ! Kon nanga dëddu ña weddi dëddu gu rafet.
  
 86. Sa Boroom mooy Ka bind, di Ku xam. 
  
-87. May Nanu la "juroom -ñaar yu Nu ñaar -ñaaral [Al -Faatiha]", ak Alxuraan ju màgg jii. 
+87. May Nanu la "juróom -ñaar yu Nu ñaar -ñaaral [Al -Faatiha]", ak Alxuraan ju màgg jii.
  
 88. Bul tàllal say gët [di xool] la Nu xéewale ay kurél ci ñoom, bul am naqar ci ñoom te 
 nangay suufeel say mbagg ñeel ñi gëm. 
@@ -7454,7 +7454,7 @@ Saar 19 : MARYAM
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jag lewaakoon ba.
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  1. Kaaf, Haa, Yaa, Ayin, Saad. 
  
 2. [Fàttalikul] firndey yërmaandey sa Boroom ca jaamam ba Zakariyaa. 
@@ -8619,7 +8619,7 @@ Bindkat !
  
 16. Ba noppi Bis -pénc ba Mu dekkal leen. 
  
-17. Sàkk Naa juroóm -ñaari asamaan yu leen tiim. Te na leen wóo r ne sàgganewuma leen ci li 
+17. Sàkk Naa juróom -ñaari asamaan yu leen tiim. Te na leen wóo r ne sàgganewuma leen ci li
 Ma leen sàkk. 
  
 18. Te wàcce Nanu ndox mu bawoo ca asmaan. Topp Nu sowal ko ci biir suuf, kon Nun am 
@@ -10677,7 +10677,7 @@ Saar 31 : LUQMAAN
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jag lewaakoon bi.
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Aliif, Laam, Miim. 
  
@@ -10788,7 +10788,7 @@ Saar 32 : SUJJÓOT
  ----------------------------------------------------------------------------- 
  
  
-Ci turu Yàlla, Yërëmaakoon bi, Ja glewaakoon bi.
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Aliif, Laam, Miim. 
  
@@ -11452,7 +11452,7 @@ Saar 36 : YAA -SIIN
  
 ------------------------------------------ ----------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Yaa -Siin. 
 2. Maa ngi waat ci Alxuraan jii fees dell ag xereñ. 
@@ -13884,7 +13884,7 @@ Saar 49 : DËKKUWAAY YA
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla Yërëmaako on bi, Jaglewaakoon bi. 
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Eey yéen ñi gëm ! Bu leen di jiitu Yàllaa kub Yonentaam. Te ngeen ragal Yàlla di ko 
 watandiku. Ndax Yàlla ku dégg la kuy xam la. 
@@ -14578,7 +14578,7 @@ Saar 55 : YËRAMAAKOON BI
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla Yë rëmaakoon bi, Jaglewaakoon bi. 
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Yërëmaakoon bi. 
  
@@ -16220,7 +16220,7 @@ Saar 74 : KU ÑU MUUR KI
  
 ----------------------------------------------------------------------------- 
  
-Ci tu ru Yàlla Yërëmaakoon bi, Jaglewaakoon bi. 
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
 1. Éey, yaw Ku ñu muur ki! 
  
 2. Neel ñokket jóg tey xuppe. 
@@ -17550,7 +17550,7 @@ Saar 93 : YOOR -YOOR GA
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi .
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Ci yoor -yoor bi ! Maa ngi giñ 
  
@@ -17698,7 +17698,7 @@ Saar 98 : FIRNDE
  
 --------------------------------- -------------------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Yéefër ya bokk ca ñoñ Téere, ak Bokkaalekat ya, du ñu deñ mukk di weddi ba baa Firnde 
 di leen dikkël ju leer : 
@@ -17727,7 +17727,7 @@ Saar 99 : YËNGUTU BA
  
 ----------------------------------------------------------------------------- 
  
-Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi
+Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
  
 1. Saa su suuf si yëngutoo yëngoom ba, 
  
