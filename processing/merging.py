@@ -1,21 +1,23 @@
-import os
 import glob
+import chardet
 
 
-def all_text_in_one(directory):
-    list_of_files = sorted(filter(os.path.isfile, glob.glob(directory + '/*')))
-    for file_path in list_of_files:
-        with open(file_path, 'r', encoding='utf-8') as input_file:
-            with open('bible_wol.txt', 'a') as output_file:
-                output_file.seek(0)
+def get_encoding(directory):
+    for filename in glob.glob(directory + "/*.txt"):
+        with open(filename, 'rb') as rawdata:
+            result = chardet.detect(rawdata.read())
+        print(filename.ljust(45), result['encoding'])
+
+
+def merge_txt(directory, file_name):
+    for file_path in glob.glob(directory + '/*.txt'):
+        with open(file_path, 'r', encoding='utf-8-sig') as input_file:
+            with open("text_scrapped/bible/" + file_name, 'a') as output_file:
                 for line in input_file:
                     output_file.write(line)
 
 
-def number_of_line(directory):
-    list_of_files = sorted(filter(os.path.isfile, glob.glob(directory + '/*')))
-    for file_path in list_of_files:
-        count_line = 0
-        for line in file_path:
-            count_line += 1
-        print("{0} = {1}".format(file_path, count_line))
+# get_encoding("text_scrapped/bible/frasbl_readaloud")
+# get_encoding("text_scrapped/bible/wolKYG_readaloud")
+merge_txt("text_scrapped/bible/frasbl_readaloud", "bible_fr.txt")
+merge_txt("text_scrapped/bible/wolKYG_readaloud", "bible_wol.txt")
