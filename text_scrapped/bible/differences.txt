@@ -1,0 +1,450 @@
+10c10
+< 002_GEN_10_read.txt = 33
+---
+> 002_GEN_10_read.txt = 34
+20c20
+< 002_GEN_20_read.txt = 19
+---
+> 002_GEN_20_read.txt = 20
+23c23
+< 002_GEN_23_read.txt = 21
+---
+> 002_GEN_23_read.txt = 22
+31,32c31,32
+< 002_GEN_31_read.txt = 56
+< 002_GEN_32_read.txt = 35
+---
+> 002_GEN_31_read.txt = 57
+> 002_GEN_32_read.txt = 34
+57,59c57,59
+< 003_EXO_07_read.txt = 31
+< 003_EXO_08_read.txt = 30
+< 003_EXO_09_read.txt = 36
+---
+> 003_EXO_07_read.txt = 27
+> 003_EXO_08_read.txt = 34
+> 003_EXO_09_read.txt = 37
+71,72c71,72
+< 003_EXO_21_read.txt = 39
+< 003_EXO_22_read.txt = 32
+---
+> 003_EXO_21_read.txt = 38
+> 003_EXO_22_read.txt = 33
+76c76
+< 003_EXO_26_read.txt = 37
+---
+> 003_EXO_26_read.txt = 39
+86c86
+< 003_EXO_36_read.txt = 38
+---
+> 003_EXO_36_read.txt = 40
+88c88
+< 003_EXO_38_read.txt = 32
+---
+> 003_EXO_38_read.txt = 33
+95,96c95,96
+< 004_LEV_05_read.txt = 28
+< 004_LEV_06_read.txt = 25
+---
+> 004_LEV_05_read.txt = 21
+> 004_LEV_06_read.txt = 32
+101c101
+< 004_LEV_11_read.txt = 44
+---
+> 004_LEV_11_read.txt = 49
+114c114
+< 004_LEV_24_read.txt = 24
+---
+> 004_LEV_24_read.txt = 25
+133,134c133,134
+< 005_NUM_16_read.txt = 37
+< 005_NUM_17_read.txt = 30
+---
+> 005_NUM_16_read.txt = 52
+> 005_NUM_17_read.txt = 15
+142c142
+< 005_NUM_25_read.txt = 21
+---
+> 005_NUM_25_read.txt = 20
+146,147c146,147
+< 005_NUM_29_read.txt = 41
+< 005_NUM_30_read.txt = 19
+---
+> 005_NUM_29_read.txt = 42
+> 005_NUM_30_read.txt = 18
+165,167c165,167
+< 006_DEU_12_read.txt = 33
+< 006_DEU_13_read.txt = 21
+< 006_DEU_14_read.txt = 28
+---
+> 006_DEU_12_read.txt = 34
+> 006_DEU_13_read.txt = 20
+> 006_DEU_14_read.txt = 31
+175,176c175,176
+< 006_DEU_22_read.txt = 31
+< 006_DEU_23_read.txt = 28
+---
+> 006_DEU_22_read.txt = 32
+> 006_DEU_23_read.txt = 27
+181,182c181,182
+< 006_DEU_28_read.txt = 71
+< 006_DEU_29_read.txt = 30
+---
+> 006_DEU_28_read.txt = 70
+> 006_DEU_29_read.txt = 31
+212c212
+< 010_1SA_21_read.txt = 18
+---
+> 010_1SA_21_read.txt = 17
+214,215c214,215
+< 010_1SA_23_read.txt = 30
+< 010_1SA_24_read.txt = 25
+---
+> 010_1SA_23_read.txt = 31
+> 010_1SA_24_read.txt = 24
+240,241c240,241
+< 011_2SA_18_read.txt = 34
+< 011_2SA_19_read.txt = 46
+---
+> 011_2SA_18_read.txt = 35
+> 011_2SA_19_read.txt = 45
+250,251c250,251
+< 012_1KI_04_read.txt = 22
+< 012_1KI_05_read.txt = 34
+---
+> 012_1KI_04_read.txt = 36
+> 012_1KI_05_read.txt = 20
+268,269c268,269
+< 012_1KI_22_read.txt = 56
+< 013_2KI_01_read.txt = 19
+---
+> 012_1KI_22_read.txt = 55
+> 013_2KI_01_read.txt = 20
+279,280c279,280
+< 013_2KI_11_read.txt = 22
+< 013_2KI_12_read.txt = 24
+---
+> 013_2KI_11_read.txt = 23
+> 013_2KI_12_read.txt = 23
+306,307c306,307
+< 017_NEH_03_read.txt = 40
+< 017_NEH_04_read.txt = 19
+---
+> 017_NEH_03_read.txt = 34
+> 017_NEH_04_read.txt = 25
+310c310
+< 017_NEH_07_read.txt = 74
+---
+> 017_NEH_07_read.txt = 75
+312,313c312,313
+< 017_NEH_09_read.txt = 39
+< 017_NEH_10_read.txt = 42
+---
+> 017_NEH_09_read.txt = 40
+> 017_NEH_10_read.txt = 41
+366,367c366,367
+< 019_JOB_40_read.txt = 34
+< 019_JOB_41_read.txt = 28
+---
+> 019_JOB_40_read.txt = 26
+> 019_JOB_41_read.txt = 36
+371,377c371,377
+< 020_PSA_003_read.txt = 11
+< 020_PSA_004_read.txt = 11
+< 020_PSA_005_read.txt = 15
+< 020_PSA_006_read.txt = 13
+< 020_PSA_007_read.txt = 20
+< 020_PSA_008_read.txt = 12
+< 020_PSA_009_read.txt = 23
+---
+> 020_PSA_003_read.txt = 10
+> 020_PSA_004_read.txt = 10
+> 020_PSA_005_read.txt = 14
+> 020_PSA_006_read.txt = 12
+> 020_PSA_007_read.txt = 19
+> 020_PSA_008_read.txt = 11
+> 020_PSA_009_read.txt = 22
+380c380
+< 020_PSA_012_read.txt = 11
+---
+> 020_PSA_012_read.txt = 10
+386,390c386,390
+< 020_PSA_018_read.txt = 53
+< 020_PSA_019_read.txt = 17
+< 020_PSA_020_read.txt = 12
+< 020_PSA_021_read.txt = 16
+< 020_PSA_022_read.txt = 34
+---
+> 020_PSA_018_read.txt = 52
+> 020_PSA_019_read.txt = 16
+> 020_PSA_020_read.txt = 11
+> 020_PSA_021_read.txt = 15
+> 020_PSA_022_read.txt = 33
+398,399c398,399
+< 020_PSA_030_read.txt = 15
+< 020_PSA_031_read.txt = 27
+---
+> 020_PSA_030_read.txt = 14
+> 020_PSA_031_read.txt = 26
+402c402
+< 020_PSA_034_read.txt = 25
+---
+> 020_PSA_034_read.txt = 24
+404c404
+< 020_PSA_036_read.txt = 15
+---
+> 020_PSA_036_read.txt = 14
+406,410c406,410
+< 020_PSA_038_read.txt = 25
+< 020_PSA_039_read.txt = 16
+< 020_PSA_040_read.txt = 20
+< 020_PSA_041_read.txt = 16
+< 020_PSA_042_read.txt = 14
+---
+> 020_PSA_038_read.txt = 24
+> 020_PSA_039_read.txt = 15
+> 020_PSA_040_read.txt = 19
+> 020_PSA_041_read.txt = 15
+> 020_PSA_042_read.txt = 13
+412,417c412,417
+< 020_PSA_044_read.txt = 29
+< 020_PSA_045_read.txt = 20
+< 020_PSA_046_read.txt = 14
+< 020_PSA_047_read.txt = 12
+< 020_PSA_048_read.txt = 17
+< 020_PSA_049_read.txt = 23
+---
+> 020_PSA_044_read.txt = 28
+> 020_PSA_045_read.txt = 19
+> 020_PSA_046_read.txt = 13
+> 020_PSA_047_read.txt = 11
+> 020_PSA_048_read.txt = 16
+> 020_PSA_049_read.txt = 22
+419,433c419,433
+< 020_PSA_051_read.txt = 23
+< 020_PSA_052_read.txt = 13
+< 020_PSA_053_read.txt = 9
+< 020_PSA_054_read.txt = 11
+< 020_PSA_055_read.txt = 26
+< 020_PSA_056_read.txt = 16
+< 020_PSA_057_read.txt = 14
+< 020_PSA_058_read.txt = 14
+< 020_PSA_059_read.txt = 20
+< 020_PSA_060_read.txt = 16
+< 020_PSA_061_read.txt = 11
+< 020_PSA_062_read.txt = 15
+< 020_PSA_063_read.txt = 14
+< 020_PSA_064_read.txt = 13
+< 020_PSA_065_read.txt = 16
+---
+> 020_PSA_051_read.txt = 21
+> 020_PSA_052_read.txt = 11
+> 020_PSA_053_read.txt = 8
+> 020_PSA_054_read.txt = 9
+> 020_PSA_055_read.txt = 25
+> 020_PSA_056_read.txt = 15
+> 020_PSA_057_read.txt = 13
+> 020_PSA_058_read.txt = 13
+> 020_PSA_059_read.txt = 19
+> 020_PSA_060_read.txt = 14
+> 020_PSA_061_read.txt = 10
+> 020_PSA_062_read.txt = 14
+> 020_PSA_063_read.txt = 13
+> 020_PSA_064_read.txt = 12
+> 020_PSA_065_read.txt = 15
+435,438c435,438
+< 020_PSA_067_read.txt = 10
+< 020_PSA_068_read.txt = 38
+< 020_PSA_069_read.txt = 39
+< 020_PSA_070_read.txt = 8
+---
+> 020_PSA_067_read.txt = 9
+> 020_PSA_068_read.txt = 37
+> 020_PSA_069_read.txt = 38
+> 020_PSA_070_read.txt = 7
+442,445c442,445
+< 020_PSA_074_read.txt = 24
+< 020_PSA_075_read.txt = 13
+< 020_PSA_076_read.txt = 15
+< 020_PSA_077_read.txt = 23
+---
+> 020_PSA_074_read.txt = 25
+> 020_PSA_075_read.txt = 12
+> 020_PSA_076_read.txt = 14
+> 020_PSA_077_read.txt = 22
+448,449c448,449
+< 020_PSA_080_read.txt = 22
+< 020_PSA_081_read.txt = 19
+---
+> 020_PSA_080_read.txt = 21
+> 020_PSA_081_read.txt = 18
+451,453c451,453
+< 020_PSA_083_read.txt = 21
+< 020_PSA_084_read.txt = 15
+< 020_PSA_085_read.txt = 16
+---
+> 020_PSA_083_read.txt = 20
+> 020_PSA_084_read.txt = 14
+> 020_PSA_085_read.txt = 15
+456,457c456,457
+< 020_PSA_088_read.txt = 21
+< 020_PSA_089_read.txt = 55
+---
+> 020_PSA_088_read.txt = 20
+> 020_PSA_089_read.txt = 54
+460c460
+< 020_PSA_092_read.txt = 18
+---
+> 020_PSA_092_read.txt = 17
+470c470
+< 020_PSA_102_read.txt = 31
+---
+> 020_PSA_102_read.txt = 30
+476c476
+< 020_PSA_108_read.txt = 16
+---
+> 020_PSA_108_read.txt = 15
+508c508
+< 020_PSA_140_read.txt = 16
+---
+> 020_PSA_140_read.txt = 15
+510c510
+< 020_PSA_142_read.txt = 10
+---
+> 020_PSA_142_read.txt = 9
+544c544
+< 021_PRO_26_read.txt = 29
+---
+> 021_PRO_26_read.txt = 30
+554c554
+< 022_ECC_05_read.txt = 21
+---
+> 022_ECC_05_read.txt = 22
+556c556
+< 022_ECC_07_read.txt = 30
+---
+> 022_ECC_07_read.txt = 31
+567,568c567,568
+< 023_SNG_06_read.txt = 14
+< 023_SNG_07_read.txt = 16
+---
+> 023_SNG_06_read.txt = 15
+> 023_SNG_07_read.txt = 15
+577,578c577,578
+< 024_ISA_08_read.txt = 25
+< 024_ISA_09_read.txt = 22
+---
+> 024_ISA_08_read.txt = 24
+> 024_ISA_09_read.txt = 23
+633c633
+< 024_ISA_64_read.txt = 13
+---
+> 024_ISA_64_read.txt = 14
+643,644c643,644
+< 025_JER_08_read.txt = 25
+< 025_JER_09_read.txt = 27
+---
+> 025_JER_08_read.txt = 24
+> 025_JER_09_read.txt = 28
+668c668
+< 025_JER_33_read.txt = 27
+---
+> 025_JER_33_read.txt = 28
+712,713c712,713
+< 027_EZK_20_read.txt = 46
+< 027_EZK_21_read.txt = 39
+---
+> 027_EZK_20_read.txt = 51
+> 027_EZK_21_read.txt = 34
+733c733
+< 027_EZK_41_read.txt = 27
+---
+> 027_EZK_41_read.txt = 28
+743,746c743,746
+< 028_DAN_03_read.txt = 35
+< 028_DAN_04_read.txt = 36
+< 028_DAN_05_read.txt = 32
+< 028_DAN_06_read.txt = 31
+---
+> 028_DAN_03_read.txt = 32
+> 028_DAN_04_read.txt = 39
+> 028_DAN_05_read.txt = 33
+> 028_DAN_06_read.txt = 30
+753,754c753,754
+< 029_HOS_01_read.txt = 11
+< 029_HOS_02_read.txt = 27
+---
+> 029_HOS_01_read.txt = 13
+> 029_HOS_02_read.txt = 25
+763,766c763,766
+< 029_HOS_11_read.txt = 13
+< 029_HOS_12_read.txt = 17
+< 029_HOS_13_read.txt = 17
+< 029_HOS_14_read.txt = 12
+---
+> 029_HOS_11_read.txt = 14
+> 029_HOS_12_read.txt = 16
+> 029_HOS_13_read.txt = 18
+> 029_HOS_14_read.txt = 11
+768,769c768,769
+< 030_JOL_02_read.txt = 29
+< 030_JOL_03_read.txt = 7
+---
+> 030_JOL_02_read.txt = 34
+> 030_JOL_03_read.txt = 23
+780,781c780,781
+< 033_JON_01_read.txt = 18
+< 033_JON_02_read.txt = 13
+---
+> 033_JON_01_read.txt = 19
+> 033_JON_02_read.txt = 12
+787,788c787,788
+< 034_MIC_04_read.txt = 16
+< 034_MIC_05_read.txt = 16
+---
+> 034_MIC_04_read.txt = 15
+> 034_MIC_05_read.txt = 17
+791,792c791,792
+< 035_NAM_01_read.txt = 16
+< 035_NAM_02_read.txt = 16
+---
+> 035_NAM_01_read.txt = 17
+> 035_NAM_02_read.txt = 15
+802,803c802,803
+< 039_ZEC_01_read.txt = 19
+< 039_ZEC_02_read.txt = 19
+---
+> 039_ZEC_01_read.txt = 23
+> 039_ZEC_02_read.txt = 15
+818c818
+< 040_MAL_03_read.txt = 26
+---
+> 040_MAL_03_read.txt = 20
+850c850
+< 074_ACT_08_read.txt = 42
+---
+> 074_ACT_08_read.txt = 41
+861c861
+< 074_ACT_19_read.txt = 42
+---
+> 074_ACT_19_read.txt = 43
+870c870
+< 074_ACT_28_read.txt = 32
+---
+> 074_ACT_28_read.txt = 33
+884c884
+< 075_ROM_14_read.txt = 25
+---
+> 075_ROM_14_read.txt = 28
+886c886
+< 075_ROM_16_read.txt = 29
+---
+> 075_ROM_16_read.txt = 26
+915c915
+< 077_2CO_13_read.txt = 15
+---
+> 077_2CO_13_read.txt = 16
+996c996
+< 096_REV_12_read.txt = 20
+---
+> 096_REV_12_read.txt = 19
