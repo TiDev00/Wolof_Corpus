@@ -1,5 +1,6 @@
 import glob
 import chardet
+import xml.etree.ElementTree as ET
 
 
 def num_line(directory):
@@ -21,13 +22,22 @@ def merge_txt(directory, file_name):
             with open("text_scrapped" + file_name, 'a',
                       encoding='utf-8-sig') as output_file:
                 for line in input_file:
-                    line.replace('NBSP')
                     output_file.write(line)
+
+
+def xml_processing(directory):
+    file = ET.parse(directory)
+    root = file.getroot()
+    for child in root:
+        print(child)
 
 
 # num_line("C:/Users/mkdiallo/Desktop/Wolof_Corpus/text_scrapped/bible/frasbl_readaloud")
 # num_line("C:/Users/mkdiallo/Desktop/Wolof_Corpus/text_scrapped/bible/wolKYG_readaloud")
-# get_encoding("text_scrapped/bible/frasbl_readaloud")
-# get_encoding("text_scrapped/bible/wolKYG_readaloud")
+# # get_encoding("text_scrapped/bible/vpl/frasbl_vpl")
+# get_encoding("text_scrapped/bible/vpl/wolKYG_vpl")
+# get_encoding("text_scrapped/bible/txt/frasbl_readaloud")
+# get_encoding("text_scrapped/bible/txt/wolKYG_readaloud")
 # merge_txt("text_scrapped/bible/frasbl_readaloud", "/bible_fr.txt")
 # merge_txt("text_scrapped/bible/wolKYG_readaloud", "/bible_wol.txt")
+xml_processing("text_scrapped/bible/vpl/frasbl_vpl/frasbl_vpl.xml")
