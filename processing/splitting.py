@@ -13,10 +13,10 @@ def read_file(directory):
         print(text)
 
 
-read_file("C:/Users/mkdiallo/Desktop/004_LEV_14_read.txt")
+# read_file("C:/Users/mkdiallo/Desktop/004_LEV_14_read.txt")
 # Object interface
 splitter = SentenceSplitter(language='fr')
-# print(splitter.split(text=read_file("C:/Users/mkdiallo/Desktop/004_LEV_14_read.txt")))
+print(splitter.split(text=""""""))
 
 
 # Functional interface

@@ -25,12 +25,11 @@ def merge_txt(directory, file_name):
                     output_file.write(line)
 
 
-def xml_processing(directory):
-    file = ET.parse(directory)
-    root = file.getroot()
-    for child in root:
-        print(child)
-
+def xml_processing(directory1):
+    file1 = ET.parse(directory1)
+    root1 = file1.getroot()
+    for child1 in root1:
+        print(child1.attrib)
 
 # num_line("C:/Users/mkdiallo/Desktop/Wolof_Corpus/text_scrapped/bible/frasbl_readaloud")
 # num_line("C:/Users/mkdiallo/Desktop/Wolof_Corpus/text_scrapped/bible/wolKYG_readaloud")
