@@ -1905,9 +1905,9 @@ Ci turu Yàlla, Yërëmaakoon bi, Jaglewaakoon bi.
 31. ba mu des Ibliis, moom bañ naa bokk ca ñay sujjóot.
 32. Mu ne [Moom Yàlla] : "Yaw Ibliis, lu la dal ba bokkuloo ci sujjóotkat yi ? "
 33. Mu tontu ne : "Man kat duma sujjóotal nit koo binde ci ban bu wow bu jóge ci banit bu ñu togg".
-34.-Mu ne ko [Moom Yàlla]: "Génnal, yaw ku ñu dàkku (dàq) nga bis niki tey !
+34. - Mu ne ko [Moom Yàlla]: "Génnal, yaw ku ñu dàkku (dàq) nga bis niki tey !
 35. Te am rëbb dal na ci sa kaw ba Bis-pénc ba di taxaw ! "
-36.-Mu ne : "Yaw sama Boroom, kon muñal ma ba bisu dekki ba".
+36. - Mu ne : "Yaw sama Boroom, kon muñal ma ba bisu dekki ba".
 37. Mu ne : bokk nga ca ña ñu muñal,
 38. ba ca Bis ba nga xam ne waxtoom lu ñu xam la.
 39. - Ibliis ne : "Yaw sama Boroom, ci sababus li nga ma beewloo, fàwwu danaa leen rafetalal ci àddina [lu bon], te fàwwu danaa leen beewloo ñoom ñépp,
