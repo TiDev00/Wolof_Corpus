@@ -8,3 +8,4 @@ from sentence_splitter import SentenceSplitter
 splitter = SentenceSplitter(language='fr')
 print(len(splitter.split(text="""""")))
 
+
