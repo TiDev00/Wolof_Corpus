@@ -7,16 +7,17 @@ from sentence_splitter import SentenceSplitter
 
 
 def nltk_splitting(filepath):
-    nltk.download('punkt')
-    fp = open(filepath)
-    data = fp.read()
-    for line in data:
-        line = line.replace("\n", "")
-    return nltk.tokenize.sent_tokenize(data, 'french')
+    # nltk.download('punkt')
+    file = open(filepath, encoding='utf-8')
+    raw_data = file.readlines()
+    data = []
+    for line in raw_data:
+        data.append(line.strip())
+    return nltk.tokenize.sent_tokenize(' '.join(data), "french")
 
 
 def spacy_splitting(filepath):
-    fp = open(filepath)
+    fp = open(filepath, encoding='utf-8')
     data = fp.read()
     nlp = spacy.load('fr')
     tokens = nlp(data)
@@ -67,4 +68,8 @@ def regex_splitting(filepath):
 
 if __name__ == "__main__":
     file = "../text_scrapped/coran/echantillon.txt"
-    print(nltk_splitting(file))
+    sentences = nltk_splitting(file)
+    print(len(sentences))
+    # print(sentences)
+    for sentence in sentences:
+        print(sentence)
