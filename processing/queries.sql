@@ -24,3 +24,4 @@ UPDATE bible.fr_bib SET verseText = TRIM('\n' FROM verseText);
 
 # delete leading and trailing \n in verseText wol_bib.verseText column
 UPDATE bible.fr_bib SET verseText = TRIM('\n' FROM verseText);
+
