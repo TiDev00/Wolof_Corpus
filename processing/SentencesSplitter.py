@@ -86,7 +86,7 @@ def trankit_splitter(filepath):
 
 
 if __name__ == "__main__":
-    file = "../text_scrapped/bible/wol/wolKYG_vpl.txt"
+    file = "../text_scrapped/coran/fr/echantillon_fr.txt"
     sentences = koehn_splitter(file)
     print(len(sentences))
     print(sentences)
