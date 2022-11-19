@@ -10,14 +10,13 @@ from mosestokenizer import MosesPunctuationNormalizer
 
 
 def file_reading(filepath):
+    normalized_data = []
     with open(filepath, encoding='utf-8') as f:
         raw_data = f.readlines()
-    cleaned_data = []
-    for line in raw_data:
-        cleaned_data.append(line.strip())
     with MosesPunctuationNormalizer('fr') as normalize:
-        cleaned_data = normalize(' '.join(cleaned_data))
-    return cleaned_data
+        for line in raw_data:
+            normalized_data.append(normalize(line).strip())
+    return ' '.join(normalized_data)
 
 
 def regex_splitter(filepath):
@@ -53,7 +52,7 @@ def regex_splitter(filepath):
     text = text.replace("<prd>", ".")
     text = text.split("<stop>")
     result = text[:-1]
-    return [s.strip() for s in result]
+    return [token.strip() for token in result]
 
 
 def nltk_splitter(filepath):
@@ -76,17 +75,20 @@ def koehn_splitter(filepath):
 def stanford_splitter(filepath):
     pipeline = stanza.Pipeline(lang='fr', processors='tokenize')  # lang='wo' also available for wolof
     result = pipeline(file_reading(filepath))
-    return [sentence.text for sentence in result.sentences]
+    return [token.text for token in result.sentences]
 
 
 def trankit_splitter(filepath):
-    pipeline = Pipeline('french', cache_dir='../venv/lib/python3.8/site-packages/trankit/cache')
+    pipeline = Pipeline(lang='french', embedding='xlm-roberta-large',
+                        cache_dir='../venv/lib/python3.8/site-packages/trankit/cache')
     result = pipeline.ssplit(file_reading(filepath))
-    return [sentence['text'] for sentence in result['sentences']]
+    return [token['text'] for token in result['sentences']]
 
 
 if __name__ == "__main__":
-    file = "../text_scrapped/coran/fr/echantillon_fr.txt"
+    file = "../text_scrapped/coran/test.txt"
     sentences = koehn_splitter(file)
+    with open('../text_scrapped/coran/result.txt', 'w', encoding='utf-8') as f:
+        for line in sentences:
+            f.write(line + '\n')
     print(len(sentences))
-    print(sentences)
