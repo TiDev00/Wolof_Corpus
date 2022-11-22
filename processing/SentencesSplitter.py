@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 
+import time
 import nltk
 import re
 import spacy
@@ -27,7 +28,6 @@ def regex_splitter(filepath):
     acronyms = "([A-Z][.][A-Z][.](?:[A-Z][.])?)"
     websites = "[.](com|net|org|io|gov)"
     digits = "([0-9])"
-
     text = " " + file_reading(filepath) + "  "
     text = text.replace("\n", " ")
     text = re.sub(prefixes, "\\1<prd>", text)
@@ -61,9 +61,9 @@ def nltk_splitter(filepath):
 
 
 def spacy_splitter(filepath):
-    pipeline = spacy.load('fr_dep_news_trf')
-    result = pipeline(file_reading(filepath))
-    return list(result.sents)
+    nlp = spacy.load('fr_dep_news_trf')
+    result = nlp(file_reading(filepath))
+    return [r.text for r in result.sents]
 
 
 def koehn_splitter(filepath):
@@ -73,7 +73,7 @@ def koehn_splitter(filepath):
 
 
 def stanford_splitter(filepath):
-    pipeline = stanza.Pipeline(lang='fr', processors='tokenize')  # lang='wo' also available for wolof
+    pipeline = stanza.Pipeline(lang='wo', processors='tokenize')  # lang='wo' also available for wolof
     result = pipeline(file_reading(filepath))
     return [token.text for token in result.sentences]
 
@@ -86,9 +86,12 @@ def trankit_splitter(filepath):
 
 
 if __name__ == "__main__":
-    file = "../text_scrapped/coran/test.txt"
-    sentences = koehn_splitter(file)
-    with open('../text_scrapped/coran/result.txt', 'w', encoding='utf-8') as f:
-        for line in sentences:
-            f.write(line + '\n')
+    file = "../text_scrapped/bible/input.txt"
+    # start_time = time.time()
+    sentences = nltk_splitter(file)
+    # end_time = time.time()
+    with open('../text_scrapped/bible/output_nltk_wo.txt', 'w', encoding='utf-8') as f:
+        for sentence in sentences:
+            f.write(sentence + '\n')
+    # print(end_time - start_time)
     print(len(sentences))
