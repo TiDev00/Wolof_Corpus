@@ -38,4 +38,3 @@ def generate_file(path, text):
     with open(path, 'w') as file:
         file.write(text)
     file.close()
-
