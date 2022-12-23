@@ -10279,8 +10279,14 @@ La seule victoire qui vaille est celle de l'honneur.
 Mentir est facile mais c’est le silence qui suit un mensonge qui est insoutenable pour une personne digne.
 Cette solitude et torture intérieure durant laquelle elle fait face à sa dignité qui l’accable, ces longues secondes où ses valeurs le harcèlent, son éducation l’accable, son éthique rue, son sang bout et où sa vergogne s’indigne sont invivables pour une telle personne.
 C’est pourquoi, certains ne peuvent pas mentir.
-
-
+En général les langues africaines sont des langues peu dotées.
+La plupart des ressources existantes sont sous format papier.
+Il y a une rareté d'outils informatiques pour ces langues.
+C’est pour apporter des solutions à ces problèmes que le projet est lancé.
+L'objectif du projet est de mettre en place une base lexicale multilingue contributive sur le web pour les langues africaines notamment sénégalaises (wolof, pulaar, bambara, etc.).
+Le projet doit constituer une base pour la constitution de correcteurs orthographiques, de traducteurs automatiques et autres dictionnaires électroniques.
+iBaatukaay se veut utile et ouvert à la collaboration de toutes les personnes ayant un intérêt pour les langues concernées et les données produites seront téléchargeables gratuitement sous licence.
+Le projet est entrain d'avancer convenablement.
 
 
 
