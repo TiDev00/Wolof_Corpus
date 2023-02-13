@@ -93,10 +93,16 @@ def output_generation(content, output_file):
 
 
 if __name__ == "__main__":
-    file = "../text_scrapped/bible/input.txt"
-    output_generation(regex_splitter(open(file)), '../text_scrapped/bible/regex_out.txt')
-    output_generation(nltk_splitter(open(file)), '../text_scrapped/bible/nltk_out.txt')
-    output_generation(spacy_splitter(open(file)), '../text_scrapped/bible/spacy_out.txt')
-    output_generation(koehn_splitter(open(file)), '../text_scrapped/bible/koehn_out.txt')
-    output_generation(stanford_splitter(open(file)), '../text_scrapped/bible/stanford_out.txt')
-    output_generation(trankit_splitter(open(file)), '../text_scrapped/bible/trankit_out.txt')
+    file = "../text_scrapped/bible/input_wol.txt"
+    print("regex")
+    output_generation(regex_splitter(file), '../text_scrapped/bible/regex_out_wol.txt')
+    print("nltk")
+    output_generation(nltk_splitter(file), '../text_scrapped/bible/nltk_out_wol.txt')
+    print("spacy")
+    output_generation(spacy_splitter(file), '../text_scrapped/bible/spacy_out_wol.txt')
+    print("koehn")
+    output_generation(koehn_splitter(file), '../text_scrapped/bible/koehn_out_wol.txt')
+    print("stanford")
+    output_generation(stanford_splitter(file), '../text_scrapped/bible/stanford_out_wol.txt')
+    print("trankit")
+    output_generation(trankit_splitter(file), '../text_scrapped/bible/trankit_out_wol.txt')
