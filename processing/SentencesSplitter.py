@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 
-import time
 import nltk
 import re
 import spacy
@@ -10,7 +9,7 @@ from sentence_splitter import SentenceSplitter
 from mosestokenizer import MosesPunctuationNormalizer
 
 
-def file_reading(filepath):
+def file_normalization(filepath):
     normalized_data = []
     with open(filepath, encoding='utf-8') as f:
         raw_data = f.readlines()
@@ -28,7 +27,7 @@ def regex_splitter(filepath):
     acronyms = "([A-Z][.][A-Z][.](?:[A-Z][.])?)"
     websites = "[.](com|net|org|io|gov)"
     digits = "([0-9])"
-    text = " " + file_reading(filepath) + "  "
+    text = " " + file_normalization(filepath) + "  "
     text = text.replace("\n", " ")
     text = re.sub(prefixes, "\\1<prd>", text)
     text = re.sub(websites, "<prd>\\1", text)
@@ -56,42 +55,48 @@ def regex_splitter(filepath):
 
 
 def nltk_splitter(filepath):
-    result = nltk.tokenize.sent_tokenize(file_reading(filepath), "french")
+    result = nltk.tokenize.sent_tokenize(file_normalization(filepath), "french")
     return result
 
 
 def spacy_splitter(filepath):
     nlp = spacy.load('fr_dep_news_trf')
-    result = nlp(file_reading(filepath))
+    result = nlp(file_normalization(filepath))
     return [r.text for r in result.sents]
 
 
 def koehn_splitter(filepath):
     splitter = SentenceSplitter(language='fr')
-    result = splitter.split(text=file_reading(filepath))
+    result = splitter.split(text=file_normalization(filepath))
     return result
 
 
 def stanford_splitter(filepath):
     pipeline = stanza.Pipeline(lang='wo', processors='tokenize')  # lang='wo' also available for wolof
-    result = pipeline(file_reading(filepath))
+    result = pipeline(file_normalization(filepath))
     return [token.text for token in result.sentences]
 
 
 def trankit_splitter(filepath):
     pipeline = Pipeline(lang='french', embedding='xlm-roberta-large',
                         cache_dir='../venv/lib/python3.8/site-packages/trankit/cache')
-    result = pipeline.ssplit(file_reading(filepath))
+    result = pipeline.ssplit(file_normalization(filepath))
     return [token['text'] for token in result['sentences']]
+
+
+def output_generation(content, output_file):
+    with open(output_file, 'w', encoding='utf-8') as f:
+        for sentence in content:
+            f.write(sentence + '\n')
+        f.close()
+        print(len(content))
 
 
 if __name__ == "__main__":
     file = "../text_scrapped/bible/input.txt"
-    # start_time = time.time()
-    sentences = nltk_splitter(file)
-    # end_time = time.time()
-    with open('../text_scrapped/bible/output_nltk_wo.txt', 'w', encoding='utf-8') as f:
-        for sentence in sentences:
-            f.write(sentence + '\n')
-    # print(end_time - start_time)
-    print(len(sentences))
+    output_generation(regex_splitter(open(file)), '../text_scrapped/bible/regex_out.txt')
+    output_generation(nltk_splitter(open(file)), '../text_scrapped/bible/nltk_out.txt')
+    output_generation(spacy_splitter(open(file)), '../text_scrapped/bible/spacy_out.txt')
+    output_generation(koehn_splitter(open(file)), '../text_scrapped/bible/koehn_out.txt')
+    output_generation(stanford_splitter(open(file)), '../text_scrapped/bible/stanford_out.txt')
+    output_generation(trankit_splitter(open(file)), '../text_scrapped/bible/trankit_out.txt')
