@@ -6,6 +6,8 @@ import spacy
 import stanza
 from trankit import Pipeline
 from sentence_splitter import SentenceSplitter
+from blingfire import *
+import pysbd
 from mosestokenizer import MosesPunctuationNormalizer
 
 
@@ -21,9 +23,9 @@ def file_normalization(filepath):
 
 def regex_splitter(filepath):
     alphabets = "([A-Za-z])"
-    prefixes = "(Mr|St|Mrs|Ms|Dr)[.]"
+    prefixes = "(Mr|St|Mrs|Ms|Dr|M)[.]"
     suffixes = "(Inc|Ltd|Jr|Sr|Co)"
-    starters = "(Mr|Mrs|Ms|Dr|Mme\s|Il\s|Ils\s|Elle\s|Elles\s)"
+    starters = "(Mr|Mrs|Ms|Dr|M|Mme\s|Il\s|Ils\s|Elle\s|Elles\s)"
     acronyms = "([A-Z][.][A-Z][.](?:[A-Z][.])?)"
     websites = "[.](com|net|org|io|gov)"
     digits = "([0-9])"
@@ -84,6 +86,15 @@ def trankit_splitter(filepath):
     return [token['text'] for token in result['sentences']]
 
 
+def blingfire_splitter(filepath):
+    return text_to_sentences(file_normalization(filepath))
+
+
+def pysbd_splitter(filepath):
+    segmenter = pysbd.Segmenter(language='fr', clean=False)
+    return segmenter.segment(file_normalization(filepath))
+
+
 def output_generation(content, output_file):
     with open(output_file, 'w', encoding='utf-8') as f:
         for sentence in content:
@@ -93,16 +104,17 @@ def output_generation(content, output_file):
 
 
 if __name__ == "__main__":
-    file = "../text_scrapped/bible/input_wol.txt"
-    print("regex")
-    output_generation(regex_splitter(file), '../text_scrapped/bible/regex_out_wol.txt')
-    print("nltk")
-    output_generation(nltk_splitter(file), '../text_scrapped/bible/nltk_out_wol.txt')
-    print("spacy")
-    output_generation(spacy_splitter(file), '../text_scrapped/bible/spacy_out_wol.txt')
-    print("koehn")
-    output_generation(koehn_splitter(file), '../text_scrapped/bible/koehn_out_wol.txt')
-    print("stanford")
-    output_generation(stanford_splitter(file), '../text_scrapped/bible/stanford_out_wol.txt')
-    print("trankit")
-    output_generation(trankit_splitter(file), '../text_scrapped/bible/trankit_out_wol.txt')
+    file = "../text_scrapped/test_fr.txt"
+    # print("regex")
+    # output_generation(regex_splitter(file), '../text_scrapped/regex_out_wol.txt')
+    # print("nltk")
+    # output_generation(nltk_splitter(file), '../text_scrapped/nltk_out_wol.txt')
+    # print("spacy")
+    # output_generation(spacy_splitter(file), '../text_scrapped/spacy_out_wol.txt')
+    # print("koehn")
+    # output_generation(koehn_splitter(file), '../text_scrapped/koehn_out_wol.txt')
+    # print("stanford")
+    # output_generation(stanford_splitter(file), '../text_scrapped/stanford_out_wol.txt')
+    # print("trankit")
+    # output_generation(trankit_splitter(file), '../text_scrapped/trankit_out_wol.txt')
+    output_generation(pysbd_splitter(file), '../text_scrapped/pysbd_out_fr.txt')
