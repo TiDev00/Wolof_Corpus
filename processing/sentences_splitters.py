@@ -74,7 +74,7 @@ def koehn_splitter(filepath):
 
 
 def stanford_splitter(filepath):
-    pipeline = stanza.Pipeline(lang='fr', processors='tokenize')  # lang='wo' also available for wolof
+    pipeline = stanza.Pipeline(lang='wo', processors='tokenize')  # lang='wo' also available for wolof
     result = pipeline(file_normalization(filepath))
     return [token.text for token in result.sentences]
 
@@ -104,18 +104,18 @@ def output_generation(content, output_file):
 
 
 if __name__ == "__main__":
-    file = "../text_scrapped/test_fr.txt"
-    print("regex")
-    output_generation(regex_splitter(file), '../text_scrapped/regex_out_fr.txt')
+    file = "../text_scrapped/test_wol.txt"
+    # print("regex")
+    # output_generation(regex_splitter(file), '../text_scrapped/regex_out_wol.txt')
     print("nltk")
-    output_generation(nltk_splitter(file), '../text_scrapped/nltk_out_fr.txt')
+    output_generation(nltk_splitter(file), '../text_scrapped/nltk_out_wol.txt')
     # print("spacy")
     # output_generation(spacy_splitter(file), '../text_scrapped/spacy_out_wol.txt')
     print("koehn")
-    output_generation(koehn_splitter(file), '../text_scrapped/koehn_out_fr.txt')
-    print("stanford")
-    output_generation(stanford_splitter(file), '../text_scrapped/stanford_out_fr.txt')
+    output_generation(koehn_splitter(file), '../text_scrapped/koehn_out_wol.txt')
+    # print("stanford")
+    # output_generation(stanford_splitter(file), '../text_scrapped/stanford_out_wol.txt')
     # print("trankit")
     # output_generation(trankit_splitter(file), '../text_scrapped/trankit_out_fr.txt')
     print("pysbd")
-    output_generation(pysbd_splitter(file), '../text_scrapped/pysbd_out_fr.txt')
+    output_generation(pysbd_splitter(file), '../text_scrapped/pysbd_out_wol.txt')
