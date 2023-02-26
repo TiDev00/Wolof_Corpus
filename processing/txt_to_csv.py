@@ -18,5 +18,5 @@ def convertor(filepath, output_filepath):
                                                    verses.index(verse) + 1, verse))
 
 
-convertor('../text_scrapped/religious/coran/fr/coran_fr.txt', '../text_scrapped/religious/coran/fr/coran_fr.csv')
-convertor('../text_scrapped/religious/coran/wol/coran_wol.txt', '../text_scrapped/religious/coran/wol/coran_wol.csv')
+convertor('../text_scrapped/religious/coran/fr/fr_cor.txt', '../text_scrapped/religious/coran/fr/fr_cor.csv')
+convertor('../text_scrapped/religious/coran/wol/wol_cor.txt', '../text_scrapped/religious/coran/wol/wol_cor.csv')
