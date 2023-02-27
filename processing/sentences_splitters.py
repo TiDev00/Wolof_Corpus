@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import nltk
 import re
 import spacy
@@ -11,13 +9,11 @@ import pysbd
 from mosestokenizer import MosesPunctuationNormalizer
 
 
-def file_normalization(filepath):
+def file_normalization(raw_data):
     normalized_data = []
-    with open(filepath, encoding='utf-8') as f:
-        raw_data = f.readlines()
     with MosesPunctuationNormalizer('fr') as normalize:
-        for line in raw_data:
-            normalized_data.append(normalize(line).strip())
+        for sentence in raw_data:
+            normalized_data.append(normalize(sentence).strip())
     return ' '.join(normalized_data)
 
 
@@ -34,8 +30,10 @@ def regex_splitter(filepath):
     text = re.sub(prefixes, "\\1<prd>", text)
     text = re.sub(websites, "<prd>\\1", text)
     text = re.sub(digits + "[.]" + digits, "\\1<prd>\\2", text)
-    if "..." in text: text = text.replace("...", "<prd><prd><prd>")
-    if "Ph.D" in text: text = text.replace("Ph.D.", "Ph<prd>D<prd>")
+    if "..." in text:
+        text = text.replace("...", "<prd><prd><prd>")
+    if "Ph.D" in text:
+        text = text.replace("Ph.D.", "Ph<prd>D<prd>")
     text = re.sub("\s" + alphabets + "[.] ", " \\1<prd> ", text)
     text = re.sub(acronyms + " " + starters, "\\1<stop> \\2", text)
     text = re.sub(alphabets + "[.]" + alphabets + "[.]" + alphabets + "[.]", "\\1<prd>\\2<prd>\\3<prd>", text)
@@ -43,10 +41,14 @@ def regex_splitter(filepath):
     text = re.sub(" " + suffixes + "[.] " + starters, " \\1<stop> \\2", text)
     text = re.sub(" " + suffixes + "[.]", " \\1<prd>", text)
     text = re.sub(" " + alphabets + "[.]", " \\1<prd>", text)
-    if "”" in text: text = text.replace(".”", "”.")
-    if "\"" in text: text = text.replace(".\"", "\".")
-    if "!" in text: text = text.replace("!\"", "\"!")
-    if "?" in text: text = text.replace("?\"", "\"?")
+    if "”" in text:
+        text = text.replace(".”", "”.")
+    if "\"" in text:
+        text = text.replace(".\"", "\".")
+    if "!" in text:
+        text = text.replace("!\"", "\"!")
+    if "?" in text:
+        text = text.replace("?\"", "\"?")
     text = text.replace(".", ".<stop>")
     text = text.replace("?", "?<stop>")
     text = text.replace("!", "!<stop>")
@@ -93,29 +95,3 @@ def blingfire_splitter(filepath):
 def pysbd_splitter(filepath):
     segmenter = pysbd.Segmenter(language='fr', clean=False)
     return segmenter.segment(file_normalization(filepath))
-
-
-def output_generation(content, output_file):
-    with open(output_file, 'w', encoding='utf-8') as f:
-        for sentence in content:
-            f.write(sentence + '\n')
-        f.close()
-        print(len(content))
-
-
-if __name__ == "__main__":
-    file = "../text_scrapped/test_wol.txt"
-    # print("regex")
-    # output_generation(regex_splitter(file), '../text_scrapped/regex_out_wol.txt')
-    print("nltk")
-    output_generation(nltk_splitter(file), '../text_scrapped/nltk_out_wol.txt')
-    # print("spacy")
-    # output_generation(spacy_splitter(file), '../text_scrapped/spacy_out_wol.txt')
-    print("koehn")
-    output_generation(koehn_splitter(file), '../text_scrapped/koehn_out_wol.txt')
-    # print("stanford")
-    # output_generation(stanford_splitter(file), '../text_scrapped/stanford_out_wol.txt')
-    # print("trankit")
-    # output_generation(trankit_splitter(file), '../text_scrapped/trankit_out_fr.txt')
-    print("pysbd")
-    output_generation(pysbd_splitter(file), '../text_scrapped/pysbd_out_wol.txt')
