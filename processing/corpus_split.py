@@ -1,5 +1,8 @@
 import random
 
+train_ratio = 0.8
+dev_ratio = 0.1
+
 
 def output_generation(content, outfile_wo, outfile_fr):
     with open(outfile_wo, 'w') as f_wo, open(outfile_fr, 'w') as f_fr:
@@ -16,13 +19,18 @@ def splitter(source, target):
 
     random.shuffle(combined_data)
 
-    test_size = 4050
+    num_sentences = len(combined_data)
+    train_size = int(num_sentences * train_ratio)
+    dev_size = int(num_sentences * dev_ratio)
 
-    return combined_data[test_size:], \
-           combined_data[:test_size]
+    return combined_data[:train_size], \
+            combined_data[train_size:train_size + dev_size], \
+            combined_data[train_size + dev_size:]
 
 
 if __name__ == '__main__':
-    train_data, test_data = splitter('../text_scrapped/merged_corpus.wo', '../text_scrapped/merged_corpus.fr')
+    train_data, dev_data, test_data = splitter('../text_scrapped/religious/wol_rel.txt',
+                                                '../text_scrapped/religious/fr_rel.txt')
     output_generation(train_data, '../train.wo', '../train.fr')
+    output_generation(dev_data, '../dev.wo', '../dev.fr')
     output_generation(test_data, '../test.wo', '../test.fr')
