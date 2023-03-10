@@ -30,7 +30,7 @@ if __name__ == '__main__':
     fr_bib_sentences = koehn_splitter(fr_bib)
 
     # corpora generation
-    output_generation(wol_cor_sentences, '../text_scrapped/religious/coran/wol_cor.txt')
-    output_generation(fr_cor_sentences, '../text_scrapped/religious/coran/fr_cor.txt')
-    output_generation(wol_bib_sentences, '../text_scrapped/religious/bible/wol_bib.txt')
-    output_generation(fr_bib_sentences, '../text_scrapped/religious/bible/fr_bib.txt')
+    output_generation(wol_cor_sentences, '../text_scrapped/religious/coran/wol/processed_wol_cor.txt')
+    output_generation(fr_cor_sentences, '../text_scrapped/religious/coran/fr/processed_fr_cor.txt')
+    output_generation(wol_bib_sentences, '../text_scrapped/religious/bible/wol/processed_wol_bib.txt')
+    output_generation(fr_bib_sentences, '../text_scrapped/religious/bible/fr/processed_fr_bib.txt')
