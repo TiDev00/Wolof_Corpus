@@ -13,10 +13,18 @@ def aligner(source_lang, target_lang, target_filepath):
 
 
 if __name__ == "__main__":
-    aligner('../text_scrapped/religious/coran/fr_cor.txt',
-            '../text_scrapped/religious/coran/wol_cor.txt',
-            '../text_scrapped/religious/coran/aligned_cor.txt')
+    aligner('../text_scrapped/religious/coran/fr/processed_fr_cor.txt',
+            '../text_scrapped/religious/coran/wol/processed_wol_cor.txt',
+            '../text_scrapped/religious/coran/cor_sentence_alignment.txt')
 
-    aligner('../text_scrapped/religious/bible/fr_bib.txt',
-            '../text_scrapped/religious/bible/wol_bib.txt',
-            '../text_scrapped/religious/bible/aligned_bib.txt')
+    aligner('../text_scrapped/religious/bible/fr/processed_fr_bib.txt',
+            '../text_scrapped/religious/bible/wol/processed_wol_bib.txt',
+            '../text_scrapped/religious/bible/bib_sentence_alignment.txt')
+
+    # aligner('../text_scrapped/religious/coran/fr/processed_fr_cor.txt',
+    #         '../text_scrapped/religious/coran/wol/processed_wol_cor.txt',
+    #         '../text_scrapped/religious/coran/cor_1sentence_alignment.txt')
+    #
+    # aligner('../text_scrapped/religious/bible/fr/processed_fr_bib.txt',
+    #         '../text_scrapped/religious/bible/wol/processed_wol_bib.txt',
+    #         '../text_scrapped/religious/bible/bib_1sentence_alignment.txt')
