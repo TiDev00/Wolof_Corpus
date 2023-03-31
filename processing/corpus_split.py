@@ -1,6 +1,7 @@
 import random
 
-train_ratio = 0.9
+train_ratio = 0.8
+dev_ratio = 0.1
 
 
 def output_generation(content, outfile_wo, outfile_fr):
