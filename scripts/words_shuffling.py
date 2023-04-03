@@ -1,12 +1,13 @@
 import random
 
+
 def shuffle_sentences(input_file_path, output_file_path, num_lines):
-    # Open the input and output files
+    # Open the input file and create an output file
     with open(input_file_path, 'r') as input_file, open(output_file_path, 'w') as output_file:
-        # Process the first num_lines lines
+        # Process the first 10,000 lines
         for i in range(num_lines):
             # Read a line from the input file
-            line = next(input_file).strip()
+            line = input_file.readline().strip()
 
             # Split the line into a list of words
             words = line.split()
@@ -18,6 +19,5 @@ def shuffle_sentences(input_file_path, output_file_path, num_lines):
             shuffled_line = ' '.join(words) + '\n'
             output_file.write(shuffled_line)
 
-            # Yield the shuffled sentence to free up memory
-            yield shuffled_line
 
+shuffle_sentences('../final_corpora/correction_task/corpus.err', '../final_corpora/correction_task/inv.txt', 10000)
