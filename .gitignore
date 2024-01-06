@@ -2,3 +2,4 @@
 .DS_Store
 /text_scrapped/bible/wol/wol_bib.sql.zip
 /text_scrapped/bible/fr/fr_bib.sql.zip
+__pycache__
